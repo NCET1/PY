@@ -1,0 +1,6 @@
+def expo(b,p):
+ expo_value=1
+ for i in range(p):
+ expo_value=expo_value*b
+ return expo_value
+print("the exponential value is:%d"%expo(int(input("enter the base value:")),int(input("enter the power value:")))

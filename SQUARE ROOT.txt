@@ -1,0 +1,9 @@
+approx=0
+better=0
+num=int(input("enter the value to find square root:"))
+approx=0.5*num
+better=0.5*(approx+num/approx)
+while approx!=better:
+ approx=better
+ better=0.5*(approx+num/approx)
+print(f"the square root of {num} is {approx}")

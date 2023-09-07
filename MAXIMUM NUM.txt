@@ -1,0 +1,7 @@
+n=int(input("Enter the number of elements you want in list:"))
+list1=[]
+for i in range(n):
+a=int(input("enter the at Index %d:"%(i)))
+list1.append(a)
+print("The maximum number in given list is "+str(max(list1)))
+print("The minimum number in given list is %d "%(min(list1)))

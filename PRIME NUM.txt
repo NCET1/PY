@@ -1,0 +1,15 @@
+def is_prime(num):
+ if num<= 2:
+ return True
+ for i in range(2,num):
+ if num % i == 0:
+ return False
+ else:
+ return True
+limit = int(input("Enter the limit:"))
+print("Prime numbers up to",limit,"are:")
+primes_up_tolimit = []
+for num in range(2, limit + 1):
+ if is_prime(num):
+ primes_up_tolimit.append(num)
+print(*primes_up_tolimit)
